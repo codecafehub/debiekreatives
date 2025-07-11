@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/debiekreatives/static/css/main.f855e6bc.css",
-    "main.js": "/debiekreatives/static/js/main.70ce5bad.js",
+    "main.css": "/debiekreatives/static/css/main.26103066.css",
+    "main.js": "/debiekreatives/static/js/main.ca791dfc.js",
     "static/js/453.763adbfb.chunk.js": "/debiekreatives/static/js/453.763adbfb.chunk.js",
-    "static/media/logo.svg": "/debiekreatives/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/debiekreatives/index.html",
-    "main.f855e6bc.css.map": "/debiekreatives/static/css/main.f855e6bc.css.map",
-    "main.70ce5bad.js.map": "/debiekreatives/static/js/main.70ce5bad.js.map",
+    "main.26103066.css.map": "/debiekreatives/static/css/main.26103066.css.map",
+    "main.ca791dfc.js.map": "/debiekreatives/static/js/main.ca791dfc.js.map",
     "453.763adbfb.chunk.js.map": "/debiekreatives/static/js/453.763adbfb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.70ce5bad.js"
+    "static/css/main.26103066.css",
+    "static/js/main.ca791dfc.js"
   ]
 }
