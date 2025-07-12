@@ -100,8 +100,8 @@ const particlesConfig = {
       {/* --- LAYER 3: Content (z-index 10) --- */}
       {/* This layer is guaranteed to be on top of everything else */}
       <div className="relative z-10 max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-light-text mb-16">
-          My Creative Services
+        <h2 className="text-4xl font-bold text-center mb-16 leading-snug md:leading-normal bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">
+            My Creative Services
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

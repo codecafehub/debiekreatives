@@ -40,7 +40,7 @@ const Home = () => {
         transition={{ duration: 1.2, ease: "easeOut" }}
       >
         <motion.h1 
-          className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight"
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
