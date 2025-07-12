@@ -1,30 +1,21 @@
-// src/App.js
+// src/index.js
 
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-// Import your pages
-import Home from './pages/Home';
-import Voice from './pages/Voice';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (
-  <div className="bg-dark-bg text-light-text">
-      <Navbar />
-      <main>
-        <Routes>
-          {/* Define your routes here */}
-          <Route path="/" element={<Home />} />
-          
-          {/* We'll add the other pages later, e.g.: */}
-          <Route path="/voice" element={<Voice />} />
-        </Routes>
-      </main>
-      <Footer />
-      {/* We can add a Footer component here later */}
-    </div>
-  );
-}
-
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    {/*
+      Add the basename prop here.
+      process.env.PUBLIC_URL will automatically resolve to "/debiekreatives"
+      based on the "homepage" field in your package.json.
+    */}
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
