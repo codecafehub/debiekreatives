@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 // Import your pages
 import Home from './pages/Home';
+import Voice from './pages/Voice';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Routes>
           {/* Define your routes here */}
           <Route path="/" element={<Home />} />
+          
           {/* We'll add the other pages later, e.g.: */}
-          {/* <Route path="/voice" element={<Voice />} /> */}
+          <Route path="/voice" element={<Voice />} />
         </Routes>
       </main>
       {/* We can add a Footer component here later */}
