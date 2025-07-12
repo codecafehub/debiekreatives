@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/debiekreatives/static/css/main.9b57086d.css",
-    "main.js": "/debiekreatives/static/js/main.100ece19.js",
+    "main.js": "/debiekreatives/static/js/main.f0bd433d.js",
     "static/media/hero-video.mp4": "/debiekreatives/static/media/hero-video.667b2afafeefe4a118f1.mp4",
     "index.html": "/debiekreatives/index.html",
     "main.9b57086d.css.map": "/debiekreatives/static/css/main.9b57086d.css.map",
-    "main.100ece19.js.map": "/debiekreatives/static/js/main.100ece19.js.map"
+    "main.f0bd433d.js.map": "/debiekreatives/static/js/main.f0bd433d.js.map"
   },
   "entrypoints": [
     "static/css/main.9b57086d.css",
-    "static/js/main.100ece19.js"
+    "static/js/main.f0bd433d.js"
   ]
 }
