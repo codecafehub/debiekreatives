@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/debiekreatives/static/css/main.6f07b02a.css",
-    "main.js": "/debiekreatives/static/js/main.9f348431.js",
+    "main.css": "/debiekreatives/static/css/main.75a788d4.css",
+    "main.js": "/debiekreatives/static/js/main.c8bc19a3.js",
+    "static/media/narration-demo.aac": "/debiekreatives/static/media/narration-demo.1a3cb9825f6b7a1da190.aac",
     "static/media/hero-video.mp4": "/debiekreatives/static/media/hero-video.667b2afafeefe4a118f1.mp4",
     "static/media/portal-editing.jpg": "/debiekreatives/static/media/portal-editing.d62ad516ef8952a32882.jpg",
     "static/media/portal-video.jpg": "/debiekreatives/static/media/portal-video.7f1ee605e578213c7b42.jpg",
     "static/media/portal-voice.jpg": "/debiekreatives/static/media/portal-voice.10d7c992b20b0592893f.jpg",
     "static/media/portals-bg3.jpg": "/debiekreatives/static/media/portals-bg3.f850cb1cf693cb35cd02.jpg",
     "static/media/portals-bg.jpg": "/debiekreatives/static/media/portals-bg.82ca5d5b4f7d7074e544.jpg",
+    "static/media/voice-page-bg.jpg": "/debiekreatives/static/media/voice-page-bg.1145f09a3358c6f4eb66.jpg",
+    "static/media/commercial-demo.mp3": "/debiekreatives/static/media/commercial-demo.8588837c1edf1498ac04.mp3",
     "static/media/client-headshot.png": "/debiekreatives/static/media/client-headshot.34cb1250f62498ca4643.png",
     "index.html": "/debiekreatives/index.html",
-    "main.6f07b02a.css.map": "/debiekreatives/static/css/main.6f07b02a.css.map",
-    "main.9f348431.js.map": "/debiekreatives/static/js/main.9f348431.js.map"
+    "main.75a788d4.css.map": "/debiekreatives/static/css/main.75a788d4.css.map",
+    "main.c8bc19a3.js.map": "/debiekreatives/static/js/main.c8bc19a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f07b02a.css",
-    "static/js/main.9f348431.js"
+    "static/css/main.75a788d4.css",
+    "static/js/main.c8bc19a3.js"
   ]
 }
