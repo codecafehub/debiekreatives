@@ -1,4 +1,33 @@
 /* src/index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* --- ADD THIS CODE BELOW --- */
+
+@keyframes spin-border {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animated-border-box {
+  position: relative; /* This is crucial for positioning the pseudo-element */
+}
+
+.animated-border-box::before {
+  content: '';
+  position: absolute;
+  top: -2px; 
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1; /* This places the border BEHIND the main element */
+  background: conic-gradient(from 180deg at 50% 50%, #FFC300, #0A74DA, #E5E7EB, #FFC300);
+  border-radius: inherit; /* This makes the border follow the parent's border-radius */
+  animation: spin-border 6s linear infinite;
+}

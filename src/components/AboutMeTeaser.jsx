@@ -20,10 +20,10 @@ const AboutMeTeaser = () => {
 
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center">
         
-        {/* --- Column 1: The Headshot --- */}
+        
         {/* --- Column 1: The Headshot with Animated Border --- */}
-        <motion.div
-            className="md:col-span-1 flex justify-center"
+      <motion.div
+          className="md:col-span-1 flex justify-center"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true, amount: 0.5 }}
