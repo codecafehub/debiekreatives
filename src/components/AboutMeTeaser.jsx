@@ -58,8 +58,8 @@ const AboutMeTeaser = () => {
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-light-text mb-4">
-            Meet <span className="text-brand-blue bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">Deborah Babalola </span>
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-500 mb-4">
+            Meet <span className="text-brand-blue text-light-text">Deborah Babalola </span>
           </h2>
           <p className="text-lg text-light-text/80 mb-6 leading-relaxed">
             I'm a multi-passionate creative with a deep love for storytelling. Whether it's through a compelling voice, a cinematic lens, or a perfectly-timed edit, my goal is always the same: to connect with audiences and create unforgettable experiences. I combine technical expertise with a genuine passion for the craft.

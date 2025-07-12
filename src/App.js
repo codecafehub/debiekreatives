@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 // Import your pages
 import Home from './pages/Home';
 import Voice from './pages/Voice';
+import Videography from './pages/Videography';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           
           {/* We'll add the other pages later, e.g.: */}
           <Route path="/voice" element={<Voice />} />
+           <Route path="/videography" element={<Videography />} />
         </Routes>
       </main>
       <Footer />

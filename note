@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { isCSSVariableToken } from 'framer-motion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,3 +20,21 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+
+vimeo api 
+d2b1f910dfe68ee3903dc7a76b514e62ec614680
+
+personal access token 
+bb3357fd9ba4bd6b8edd6aad9571f905
+
+client secret 
+iovDK+70WzcRV/LnotSsaWTn4ZZraczHZB11+e5WcF4CsBswGt7uxygW1henuFjWNYlqKvqs83hKs1LabRautDjeR7cq6SUOIZUEGnUUV5m4lRk7WuL4rezfy4cAmZVB
+
+accesss token url 
+https://api.vimeo.com/oauth/access_token
+
+oAuth url 
+https://api.vimeo.com/oauth/authorize
+
+isCSSVariableToken6oinOLsStTRKDf/Uj7wBzdL6+q1krEDJWuGZ9aOeKAnPfWPuRU5bkTtuQj7IXzL+cvo8Xz3CJuob98flwjX9wVJR/U/F1aAxvSLo6PE851N4hG9omO4CspeS6UDmmfcf

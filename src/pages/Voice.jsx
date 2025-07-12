@@ -107,7 +107,7 @@ const demos = [
   { title: "Commercial Demo", src: commercialDemo },
   { title: "Narration Demo", src: narrationDemo },
 ];
-const services = ["Commercials", "Corporate Narration", "E-Learning", "IVR & Phone Systems", "Audiobooks", "Video Games"];
+const services = ["Commercials", "Corporate Narration", "E-Learning", "IVR", "Audiobooks", "Profile Read", "Curate Celebrate Videos"];
 
 
 const Voice = () => {
@@ -169,26 +169,19 @@ const Voice = () => {
           {/* --- Studio Specs & Services Section --- */}
           {/* No z-index or relative needed */}
           <section 
-            className="p-8 rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-12"
+            className="p-8 rounded-xl grid grid-cols-1  "
             style={{ 
                 backgroundColor: 'rgba(30, 41, 59, 0.5)',
                 backdropFilter: 'blur(10px)',
                 border: '1px solid rgba(255, 255, 255, 0.1)'
             }}
           >
-            {/* Studio Specs */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">Broadcast-Quality Studio</h2>
-               <ul className="space-y-4 text-lg">
-                    <li className="flex items-center"><Mic className="w-6 h-6 mr-3 text-brand-blue" /> Microphone: Neumann TLM 103</li>
-                    <li className="flex items-center"><Headphones className="w-6 h-6 mr-3 text-brand-blue" /> Interface: Universal Audio Apollo Twin</li>             <li className="flex items-center"><Computer className="w-6 h-6 mr-3 text-brand-blue" /> Connectivity: Source-Connect, Zoom, etc.</li>
-                     <li className="flex items-center"><Building className="w-6 h-6 mr-3 text-brand-blue" /> Booth: Professionally treated, whisper-quiet space</li>
-                 </ul>
-            </div>
+           
+            
             
             {/* Services Offered */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">Services Offered</h2>
+              <h2 className="text-3xl text-center font-bold mb-6 bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">Services Offered</h2>
                 <div className="flex flex-wrap gap-3">
                   {services.map(service => (
                     <span key={service} className="bg-accent-blue/20 text-white font-medium px-4 py-2 rounded-full">
