@@ -3,6 +3,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // Import your pages
 import Home from './pages/Home';
 import Voice from './pages/Voice';
@@ -20,6 +21,7 @@ function App() {
           <Route path="/voice" element={<Voice />} />
         </Routes>
       </main>
+      <Footer />
       {/* We can add a Footer component here later */}
     </div>
   );

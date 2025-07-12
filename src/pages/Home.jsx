@@ -6,12 +6,17 @@ import { motion } from 'framer-motion'; // Import motion
 
 // Import your background video
 import heroVideo from '../assets/videos/hero-video.mp4';
+// <-- Import the new component
+import ServicePortals from '../components/ServicePortals'; 
+import AboutMeTeaser from '../components/AboutMeTeaser'; 
 
 const Home = () => {
   return (
-    <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
-      
-      {/* --- Video Background --- */}
+   
+
+     <>
+      <section className="relative h-screen flex flex-col items-center justify-center overflow-hidden">
+        {/* --- Video Background --- */}
       <div className="absolute top-0 left-0 w-full h-full z-0">
         <video
           className="w-full h-full object-cover"
@@ -66,8 +71,14 @@ const Home = () => {
           </Link>
         </motion.div>
       </motion.div>
+      </section>
 
-    </section>
+       {/* --- Add the new About Me Teaser section right below --- */}
+      <AboutMeTeaser />
+
+      {/* --- Add the new portals section right below --- */}
+      <ServicePortals />
+    </>
   );
 };
 

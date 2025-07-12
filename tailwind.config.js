@@ -11,16 +11,29 @@ module.exports = {
     extend: {
       // Updated color palette
       colors: {
-        'brand-blue': '#0A74DA',      // The main, vibrant brand blue
-        'accent-blue': '#3B82F6',     // A slightly lighter blue for hovers/highlights
-        'dark-bg': '#121212',         // The main dark background
-        'light-text': '#E5E7EB',     // A soft white (off-white) for text
-        'dark-text': '#1F2937',      // A dark grey for text on light backgrounds
+        'brand-blue': '#0A74DA',
+        'accent-blue': '#3B82F6',
+        'brand-gold': '#FFC300', // <-- Add this line back
+        'dark-bg': '#121212',
+        'light-text': '#E5E7EB',
+        'dark-text': '#1F2937',
       },
       fontFamily: {
         sans: ['"Inter"', 'sans-serif'],
       }
     },
+     animation: {
+        'spin-slow': 'spin 6s linear infinite',
+      },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
+      }
   },
   plugins: [],
 }
+
+
+      
