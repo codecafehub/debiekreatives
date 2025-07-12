@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/debiekreatives/static/css/main.1dae9ca1.css",
-    "main.js": "/debiekreatives/static/js/main.f899ad75.js",
+    "main.css": "/debiekreatives/static/css/main.6f07b02a.css",
+    "main.js": "/debiekreatives/static/js/main.f8188410.js",
     "static/media/hero-video.mp4": "/debiekreatives/static/media/hero-video.667b2afafeefe4a118f1.mp4",
     "static/media/portal-editing.jpg": "/debiekreatives/static/media/portal-editing.d62ad516ef8952a32882.jpg",
     "static/media/portal-video.jpg": "/debiekreatives/static/media/portal-video.7f1ee605e578213c7b42.jpg",
@@ -10,11 +10,11 @@
     "static/media/portals-bg.jpg": "/debiekreatives/static/media/portals-bg.82ca5d5b4f7d7074e544.jpg",
     "static/media/client-headshot.png": "/debiekreatives/static/media/client-headshot.34cb1250f62498ca4643.png",
     "index.html": "/debiekreatives/index.html",
-    "main.1dae9ca1.css.map": "/debiekreatives/static/css/main.1dae9ca1.css.map",
-    "main.f899ad75.js.map": "/debiekreatives/static/js/main.f899ad75.js.map"
+    "main.6f07b02a.css.map": "/debiekreatives/static/css/main.6f07b02a.css.map",
+    "main.f8188410.js.map": "/debiekreatives/static/js/main.f8188410.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dae9ca1.css",
-    "static/js/main.f899ad75.js"
+    "static/css/main.6f07b02a.css",
+    "static/js/main.f8188410.js"
   ]
 }
