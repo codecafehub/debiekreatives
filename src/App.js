@@ -8,6 +8,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Voice from './pages/Voice';
 import Videography from './pages/Videography';
+import Editing from './pages/Editing';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -20,7 +22,10 @@ function App() {
           
           {/* We'll add the other pages later, e.g.: */}
           <Route path="/voice" element={<Voice />} />
-           <Route path="/videography" element={<Videography />} />
+          <Route path="/videography" element={<Videography />} />
+          <Route path="/editing" element={<Editing />} />
+          <Route path="/contact" element={<Contact />} />
+           
         </Routes>
       </main>
       <Footer />
