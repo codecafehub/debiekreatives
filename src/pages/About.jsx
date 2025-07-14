@@ -69,7 +69,7 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7 }}
             >
-                <h2 className="text-3xl font-bold mb-4">My Creative Philosophy</h2>
+                <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">My Creative Philosophy</h2>
                 <p className="text-xl text-light-text/80 leading-loose">
                     "Every project is a new world waiting to be explored. My role is to be the guide, using my skills to craft a journey that is authentic, engaging, and unforgettable for the audience."
                 </p>
@@ -77,7 +77,7 @@ const About = () => {
 
             {/* --- Section 3: Professional Journey Timeline --- */}
             <section>
-              <h2 className="text-3xl font-bold text-center mb-12">My Journey</h2>
+              <h2 className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-brand-blue to-brand-gold text-transparent bg-clip-text">My Journey</h2>
               <div className="relative max-w-2xl mx-auto">
                 {/* The vertical line */}
                 <div className="absolute left-4 top-0 h-full w-0.5 bg-brand-blue/30"></div>

@@ -12,9 +12,9 @@ const AboutMeTeaser = () => {
   return (
     // The main container uses 'background-fixed' for the parallax effect
     <div
-      className="relative py-20 px-4 bg-cover bg-fixed bg-center"
-      style={{ backgroundImage: `url(${sectionBg})` }}
-    >
+  className="relative py-20 px-4 bg-cover bg-fixed bg-center overflow-x-hidden" // <-- THE FIX IS HERE
+  style={{ backgroundImage: `url(${sectionBg})` }}
+>
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-dark-bg/85"></div>
 
