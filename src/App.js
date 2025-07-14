@@ -10,6 +10,7 @@ import Voice from './pages/Voice';
 import Videography from './pages/Videography';
 import Editing from './pages/Editing';
 import Contact from './pages/Contact';
+import About from './pages/About';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/videography" element={<Videography />} />
           <Route path="/editing" element={<Editing />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
            
         </Routes>
       </main>
