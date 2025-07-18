@@ -2,10 +2,13 @@
 
 // src/pages/Contact.js
 
-import React, { useCallback } from 'react'; // UPDATED: Added useCallback
+import React, { useCallback , useState} from 'react'; // UPDATED: Added useCallback
 import { motion } from 'framer-motion';
 import Particles from "react-tsparticles"; // NEW: Import Particles
 import { loadSlim } from "tsparticles-slim"; // NEW: Import loadSlim
+import { Send } from 'lucide-react'; // --- 2. IMPORT the Send icon
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // --- Imports (no changes here) ---
 import sectionBg from '../assets/images/portals-bg3.jpg';
@@ -13,11 +16,57 @@ import { Mail, Phone, MapPin, Linkedin, Instagram, Twitter, Facebook } from 'luc
 
 const Contact = () => {
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    alert("Thank you for your message! We'll be in touch soon. (This is a placeholder)");
-    e.target.reset();
-  };
+  const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: ''
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+  
+    const handleInputChange = (e) => {
+      setFormData({
+        ...formData,
+        [e.target.name]: e.target.value
+      });
+    };
+  
+
+    const handleFormSubmit = async (e) => {
+      e.preventDefault();
+      setIsSubmitting(true);
+      
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw552mEj6uUIWFT034JLddYU1GU9pKNrcLvpOyTo9vrlTV0jpIOOyCH_WodacXv3-MO/exec";
+      const form = e.target;
+      
+      try {
+        await fetch(scriptURL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+    
+    
+       toast.success("Thank you for your message! I'll get back to you soon.", {
+          position: "top-right",
+          autoClose: 5000,
+        });
+    
+        setFormData({ name: '', email: '', message: '' }); // Clear the form
+        
+  
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        toast.error("An error occurred. Please try again.", { position: "top-right" });
+      }
+    
+      setIsSubmitting(false);
+    };
+  
+   
+
 
   // NEW: Add the particle setup logic and configuration for blocks
   const particlesInit = useCallback(async engine => {
@@ -55,6 +104,7 @@ const Contact = () => {
         className="bg-cover bg-fixed bg-center text-light-text"
         style={{ backgroundImage: `url(${sectionBg})` }}
     >
+      <ToastContainer />
       <div className="relative bg-dark-bg/90 backdrop-blur-sm pt-10 overflow-hidden"> 
       {/* UPDATED: Added relative and overflow-hidden */}
 
@@ -132,29 +182,40 @@ const Contact = () => {
                 viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 0.7 }}
               >
-                <form onSubmit={handleFormSubmit} className="space-y-6">
-                  {/* ... form inputs (no changes) ... */}
-                   <form onSubmit={handleFormSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-light-text/80 mb-1">Your Name</label>
-                    <input type="text" name="name" id="name" required className="w-full bg-dark-bg border border-gray-600 rounded-md p-3 text-light-text focus:ring-2 focus:ring-brand-blue outline-none" />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-light-text/80 mb-1">Your Email</label>
-                    <input type="email" name="email" id="email" required className="w-full bg-dark-bg border border-gray-600 rounded-md p-3 text-light-text focus:ring-2 focus:ring-brand-blue outline-none" />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-light-text/80 mb-1">Your Message</label>
-                    <textarea name="message" id="message" rows="5" required className="w-full bg-dark-bg border border-gray-600 rounded-md p-3 text-light-text focus:ring-2 focus:ring-brand-blue outline-none"></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    className="w-full bg-brand-blue text-light-text hover:bg-accent-blue py-3 rounded-md font-bold transition-colors text-lg"
-                  >
-                    Send Message
-                  </button>
-                </form>
-                </form>
+                <form onSubmit={handleFormSubmit} className="space-y-4">
+                          <div>
+                            <label htmlFor="name" className="block text-sm font-medium text-light-text/80 mb-1">Name</label>
+                            <input type="text" name="name" id="name" required value={formData.name} onChange={handleInputChange} className="w-full bg-gray-900/50 border border-gray-600 rounded-md p-2 text-light-text focus:ring-2 focus:ring-brand-blue outline-none" />
+                          </div>
+                          <div>
+                            <label htmlFor="email" className="block text-sm font-medium text-light-text/80 mb-1">Email</label>
+                            <input type="email" name="email" id="email" required value={formData.email} onChange={handleInputChange} className="w-full bg-gray-900/50 border border-gray-600 rounded-md p-2 text-light-text focus:ring-2 focus:ring-brand-blue outline-none" />
+                          </div>
+                          <div>
+                            <label htmlFor="message" className="block text-sm font-medium text-light-text/80 mb-1">Message</label>
+                            <textarea name="message" id="message" rows="4" required value={formData.message} onChange={handleInputChange} className="w-full bg-gray-900/50 border border-gray-600 rounded-md p-2 text-light-text focus:ring-2 focus:ring-brand-blue outline-none"></textarea>
+                          </div>
+                
+                          {/* --- 7. REMOVED the duplicate button --- */}
+                          <button
+                            type="submit"
+                            disabled={isSubmitting}
+                            className="w-full flex items-center justify-center bg-brand-blue text-light-text hover:bg-accent-blue py-3 rounded-md font-bold transition-colors group disabled:opacity-50 disabled:cursor-not-allowed"
+                          >
+                            {isSubmitting ? (
+                              <>
+                                <div className="animate-spin w-5 h-5 mr-3 border-2 border-white border-t-transparent rounded-full" />
+                                Sending...
+                              </>
+                            ) : (
+                              <>
+                                <Send size={20} className="mr-2 group-hover:translate-x-1 transition-transform duration-300" />
+                                Send Message
+                              </>
+                            )}
+                          </button>
+                
+                        </form>
               </motion.div>
             </section>
         </div>
