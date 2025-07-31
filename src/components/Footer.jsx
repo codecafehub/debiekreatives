@@ -31,13 +31,14 @@ const Footer = () => {
                 <h4 className="font-semibold text-light-text tracking-wider uppercase mb-4">Connect With Me</h4>
                 {/* We center the icons within their own container */}
                 <div className="flex justify-center md:justify-start space-x-5">
-                <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:text-brand-blue transition-colors"><Linkedin size={24} /></a>
-                <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram" className="hover:text-brand-blue transition-colors"><Instagram size={24} /></a>
-                <a href="#" target="_blank" rel="noopener noreferrer" title="Twitter" className="hover:text-brand-blue transition-colors"><Twitter size={24} /></a>
-                <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:text-brand-blue transition-colors"><Facebook size={24} /></a>
-                <a href="mailto:yourclientemail@example.com" title="Send an Email" className="hover:text-brand-blue transition-colors"><Mail size={24} /></a>
+                <a href="https://www.linkedin.com/in/babaloladeborah" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="hover:text-brand-blue transition-colors"><Linkedin size={24} /></a>
+                <a href="https://www.instagram.com/debiekreatives?igsh=M3E4NDd6MjMxY2Ri" target="_blank" rel="noopener noreferrer" title="Instagram" className="hover:text-brand-blue transition-colors"><Instagram size={24} /></a>
+                <a href="https://x.com/debiekreatives?t=yQc6GPn9VqgpvYbPnTx1tw&s=09" target="_blank" rel="noopener noreferrer" title="Twitter" className="hover:text-brand-blue transition-colors"><Twitter size={24} /></a>
+                <a href="https://www.facebook.com/deborah.babalola.796" target="_blank" rel="noopener noreferrer" title="Facebook" className="hover:text-brand-blue transition-colors"><Facebook size={24} /></a>
+                <a href="mailto:deborahbabalola002@gmail.com" title="Send an Email" className="hover:text-brand-blue transition-colors"><Mail size={24} /></a>
                 </div>
             </div>
+
             
             {/* --- Column 3: The CTA Button --- */}
             <div className="flex flex-col items-center md:items-start">

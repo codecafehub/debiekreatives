@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 // --- Imports ---
 import sectionBg from '../assets/images/portals-bg3.jpg';
-import clientHeadshot from '../assets/images/client-headshot.png';
+import clientHeadshot from '../assets/images/deb1.png';
 import { Briefcase } from 'lucide-react';
 
 // Data for Skills & Journey sections

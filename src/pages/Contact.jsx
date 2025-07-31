@@ -150,13 +150,13 @@ const Contact = () => {
                   Feel free to reach out via email, phone, or find me on social media. I'm always open to discussing new projects and creative ideas.
                 </p>
                 <div className="space-y-4">
-                  <a href="mailto:yourclient@email.com" className="flex items-center space-x-3 group">
+                  <a href="mailto:deborahbabalola002@gmail.com" className="flex items-center space-x-3 group">
                     <Mail className="w-6 h-6 text-brand-blue" />
-                    <span className="group-hover:text-brand-blue transition-colors">yourclient@email.com</span>
+                    <span className="group-hover:text-brand-blue transition-colors">deborahbabalola002@gmail.com</span>
                   </a>
-                  <a href="tel:+1234567890" className="flex items-center space-x-3 group">
+                  <a href="tel:+2348166807589" className="flex items-center space-x-3 group">
                     <Phone className="w-6 h-6 text-brand-blue" />
-                    <span className="group-hover:text-brand-blue transition-colors">+1 (234) 567-890</span>
+                    <span className="group-hover:text-brand-blue transition-colors">(+234) 816 680 758 9</span>
                   </a>
                   <div className="flex items-center space-x-3">
                     <MapPin className="w-6 h-6 text-brand-blue" />
@@ -166,10 +166,10 @@ const Contact = () => {
                 <div className="pt-4 border-t border-gray-700/50">
                   <h3 className="font-semibold text-light-text mb-3">Follow Me</h3>
                    <div className="flex space-x-5">
-                      <a href="#" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="text-light-text/70 hover:text-brand-blue transition-colors"><Linkedin size={28} /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" title="Instagram" className="text-light-text/70 hover:text-brand-blue transition-colors"><Instagram size={28} /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" title="Twitter" className="text-light-text/70 hover:text-brand-blue transition-colors"><Twitter size={28} /></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer" title="Facebook" className="text-light-text/70 hover:text-brand-blue transition-colors"><Facebook size={28} /></a>
+                      <a href="https://www.linkedin.com/in/babaloladeborah" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="text-light-text/70 hover:text-brand-blue transition-colors"><Linkedin size={28} /></a>
+                      <a href="https://www.instagram.com/debiekreatives?igsh=M3E4NDd6MjMxY2Ri" target="_blank" rel="noopener noreferrer" title="Instagram" className="text-light-text/70 hover:text-brand-blue transition-colors"><Instagram size={28} /></a>
+                      <a href="https://x.com/debiekreatives?t=yQc6GPn9VqgpvYbPnTx1tw&s=09" target="_blank" rel="noopener noreferrer" title="Twitter" className="text-light-text/70 hover:text-brand-blue transition-colors"><Twitter size={28} /></a>
+                      <a href="https://www.facebook.com/deborah.babalola.796" target="_blank" rel="noopener noreferrer" title="Facebook" className="text-light-text/70 hover:text-brand-blue transition-colors"><Facebook size={28} /></a>
                    </div>
                 </div>
               </motion.div>
