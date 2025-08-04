@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 // Import the headshot and background image
-import clientHeadshot from '../assets/images/deb1.png';
+import clientHeadshot from '../assets/images/deb.jpeg';
 import sectionBg from '../assets/images/portals-bg3.jpg';
 
 const AboutMeTeaser = () => {
