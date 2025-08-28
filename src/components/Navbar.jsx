@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+// import sectionBg from '../assets/images/portals-bg3.jpg';
+import brandLogo from '../assets/images/logo.png';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +23,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           
           <div className="flex-shrink-0">
-            <Link to="/" className="text-light-text text-2xl font-bold tracking-wider">
-              Debiekreatives
+            <Link to="/" className="flex items-center">
+              <img 
+                src={brandLogo} 
+                alt="Debiekreatives Logo" 
+                className="h-10 w-auto" // Control the size here. h-10 is a good start.
+              />
             </Link>
           </div>
 
+          
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {/* Updated hover class to use accent-blue */}
